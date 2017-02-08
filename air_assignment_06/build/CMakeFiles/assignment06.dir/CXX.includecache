@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/agent.hpp
+vector
+-
+string
+-
+utility
+-
+map
+-
+
+/home/ravikiran/Documents/H-BRS/Assignment/AIR/assignment6/air_assignment_06/air_assignment_06/src/agent.cpp
+agent.hpp
+/home/ravikiran/Documents/H-BRS/Assignment/AIR/assignment6/air_assignment_06/air_assignment_06/src/agent.hpp
+iostream
+-
+queue
+-
+algorithm
+-
+math.h
+-
+map
+-
+
