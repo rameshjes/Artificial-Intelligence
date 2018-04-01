@@ -1,0 +1,43 @@
+Decision problems are those for only whose answer is only yes/No.
+Class  P :
+-Yes/No problems with a polynomial-time algorithm., set of problems that can be solved in polynomial time. 
+If you have a1,a2,a3,..an and you want to find search one number in that list, you can just run for loop and check. This searching among n numbers can be find within O(n) ,O(n^2). these are example of polynomial time. which you can solve in polynomial time.
+
+class NP:
+yes/no problems with a polynomial time "checking algorithm" more precisely, given a solution (e.g. subset of vertices) we can check in a polynomial time if that solution is what we are looking for(e.g. is it a click of size k?)
+you cannot solve these problems in polynomial time, but if you have given solution of problems then we can check whether solution os present or not . so we can check within polynomial time. So in NP problems, you must have solutions.
+
+P is proper subset of NP, because if any problem P problem can be solved in Polynomial time, and if you have solutions then you can also solve in polynomial time. All problems in P , can be in NP class also.
+
+===================================================================================================================================
+https://danielmiessler.com/study/pvsnp/#gs.ihK1HGo
+
+If you spend time in or around the programming community you probably hear the term “P versus NP” rather frequently. Unfortunately, even many with formal computer science training have a weak understanding of the concept.
+
+So here’s a simple and concise explanation:
+
+The Problem
+
+P vs. NP
+The P vs. NP problem asks whether every problem whose solution can be quickly verified by a computer can also be quickly solved by a computer.
+So let’s figure out what we mean by P and NP.
+
+P problems are easily solved by computers, and NP problems are not easily solvable, but if you present a potential solution it’s easy to verify whether it’s correct or not.
+
+As you can see from the diagram above, all P problems are NP problems. That is, if it’s easy for the computer to solve, it’s easy to verify the solution. So the P vs NP problem is just asking if these two problem types are the same, or if they are different, i.e. that there are some problems that are easily verified but not easily solved.
+
+It currently appears that P ≠ NP, meaning we have plenty of examples of problems that we can quickly verify potential answers to, but that we can’t solve quickly. Let’s look at a few examples:
+
+A traveling salesman wants to visit 100 different cities by driving, starting and ending his trip at home. He has a limited supply of gasoline, so he can only drive a total of 10,000 kilometers. He wants to know if he can visit all of the cities without running out of gasoline.
+A farmer wants to take 100 watermelons of different masses to the market. She needs to pack the watermelons into boxes. Each box can only hold 20 kilograms without breaking. The farmer needs to know if 10 boxes will be enough for her to carry all 100 watermelons to market.
+All of these problems share a common characteristic that is the key to understanding the intrigue of P versus NP: In order to solve them you have to try all combinations.
+
+The Solution
+
+This is why the answer to the P vs. NP problem is so interesting to people. If anyone were able to show that P is equal to NP, it would make difficult real-world problems trivial for computers.
+
+Summary
+
+P vs. NP deals with the gap between computers being able to quickly solve problems vs. just being able to test proposed solutions for correctness.
+As such, the P vs. NP problem is the search for a way to solve problems that require the trying of millions, billions, or trillions of combinations without actually having to try each one.
+Solving this problem would have profound effects on computing, and therefore on our society. - Read more at: http://scl.io/EN0TB70p#gs.ihK1HGo
